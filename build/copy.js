@@ -25,8 +25,6 @@ const extensionsExportTemp = {
 }
 
 gulp.task('copy', (done) => {
-    copyFiles(scripts.common, srcDir, destDir + 'common');
-    copyFiles(scripts.control, srcDir, destDir + 'data-visualization');
     copyFiles(scripts.barcode, extensionsItemSrcDir, extensionsItemDir);
     copyFiles(scripts.signature, extensionsItemSrcDir, extensionsItemDir);
     copyFiles(scripts.shape, extensionsItemSrcDir, extensionsItemDir);
